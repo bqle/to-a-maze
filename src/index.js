@@ -121,7 +121,7 @@ constructor(props) {
               i: i,
               j: j, 
               value: 0, // 0 is unvisited, 1 is visited during generation,
-                        // 2 is visited during solvation, 3 is picked after solvation
+                        // 2 is visited during solution, 3 is picked after solution
               leftEdge: false, 
               rightEdge: false,
               topEdge: false,
@@ -946,7 +946,7 @@ render() {
     return (
     <div className="game">
         <div className="game-info">
-            <div >The Amazing Maze</div>
+            <div >To A Maze (do you know the way?)</div>
             <div>
               <div style={{font: '14px'}}>Generation</div>
                 <button onClick={() => this.dfsGenerator()}>DFS</button>
@@ -958,7 +958,7 @@ render() {
             </div>
             <br></br>
             <div>
-                <div style={{font: '14px'}}>Solvation</div>
+                <div style={{font: '14px'}}>Solution</div>
                 <button onClick={() => this.wallHugger()}>Wall hugger</button>
                 <button onClick={() => this.aStar()}>A*</button>
                 <button onClick={() => this.bfs()}>BFS</button>

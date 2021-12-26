@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# To a maze (do you know the way?)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple [interactive demo](https://bqle.github.io/to-a-maze/) for the most prevalent maze-generating and maze-solving algorithms (including A*)!
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This React app showcases the most popular maze-generating and maze-solving algorithms including DFS, Kruskal's, Prim's and recursive division for generation, and wall hugger (my favorite as a kid), A*, and BFS for solving.<br>
+Each maze generation algorithm comes with its quirks. For instance, DFS will tend to have long corridors, Kruskal's will have short deadends, Prim's will be radial, and recursive division will have straight corridors. 
+Each maze solving algorithm also comes with its strengths and weaknesses as well! Wall hugger is my favorite way to solve a maze because it is intuitive, but it only works for mazes that have 2 walls. A* and BFS are both fast, but they require an army of frontier soldiers. A* is especially good if you know the general direction of where you're going.
+With this demo, you can try and see these algorithms in practice for yourself!
 
-### `npm start`
+### Running the demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* The maze will start as an empty, so generate the walls by choosing one of the genration options.
+* Then, choose one of the solving algorithms in order to find a way through the maze.
+* A fun challenge you can set for yourself is to see if you can spot a solution before the solving algorithm finishes!
+* Press "reset" to clear the maze, and repeat!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Demo
 
-### `npm test`
+![Kruskal](demo_files/kruskal.png)
+![Recursive Division](demo_files/recursive_division.png)
+![Watch a demo](demo_files/demo.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Author
 
-### `npm run build`
+ [@Benjamin Le](bqle@seas.upenn.edu)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Acknowledgments
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [Maze Generation](https://en.wikipedia.org/wiki/Maze_generation_algorithm)
+* [Maze Solution](https://en.wikipedia.org/wiki/Maze-solving_algorithm)
